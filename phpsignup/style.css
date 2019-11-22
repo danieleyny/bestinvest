@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: rgb(80, 80, 80);
+  width:100%;
+
+}
+.logo {
+  cursor: pointer;
+  float: left;
+  height: 60px;
+  width: 100px;
+}
+.navlinks {
+  list-style: none;
+  display: flex;
+}
+.navlinks li {
+  display: inline-block;
+  padding: 0px 20px;
+  
+}
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: white;
+  padding: 30px 12px;
+}
+.navlinks li a:hover {
+  color: grey;
+  background-color: lightblue;
+ 
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(96, 219, 250,1);
+  border:none;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(96, 219, 250,0.5);
+  
+}
+.logsituation {
+  text-align:center;
+  background-color: rgb(94, 93, 93);
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  padding: 50px;
+  margin: 20px 33%;
+  width: 400px; 
+  color: rgba(96, 219, 250,1);
+  font-size: 22px;
+}
+.usernamepw {
+  padding: 5px 4px;
+  background-color: transparent;
+  border-color: white;
+  background-color: rgba(96, 219, 250,.3);
+}
+.wrapper-signup {
+  padding: 10px 6px;
+  background-color: transparent;
+  border-color: white;
+  margin-top: 15px;
+  font-size:13px;
+  color: rgba(96, 219, 250,1);
+}
+.signupformbutton {
+  padding: 12px 20px;
+  font-size:16px;
+  font-family: 'Playfair Display', serif;
+}
+.headersignup {
+  color: white;
+  text-decoration: none;
+}
+.headersignup:hover {
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-color: lightblue;
+}
+
