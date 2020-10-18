@@ -47,6 +47,24 @@ p{
 .section-title span {
     color: crimson;
 }
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid rgb(141, 228, 212);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.cta:hover{
+    color: white;
+    background-color: rgb(102, 172, 159);
+}
 /* Hero Section */
 #hero {
     background-image: url(./images/nycskyline.png);
@@ -118,24 +136,7 @@ p{
     animation-delay: 2.5s;
 }
 
-#hero .cta {
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 3px solid rgb(141, 228, 212);
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
 
-#hero .cta:hover{
-    color: white;
-    background-color: rgb(102, 172, 159);
-}
 /* End Hero Section */
 
 
@@ -288,8 +289,78 @@ p{
     opacity: .6;
 
 }
-
+#projects .project-img img{
+    transition: .3s ease transform;
+}
+#projects .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
 /* End Projects Section */
+
+/* About Section */
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left{
+    width:250px;
+    height: 360px;
+
+}
+
+#about .col-right{
+    width: 100%;
+
+}
+#about .col-right h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+}
+
+#about .col-right .cta{
+    color: black;
+    border-color: crimson;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    
+}
+#about .col-right .cta:hover{
+    color: white;
+    border-color: crimson;
+    background-color: crimson;
+    
+}
+#about .col-left .about-img  {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+
+#about .col-left .about-img::after {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+
+}
+/* End About Section */
 
 
 /* Keyframes */
