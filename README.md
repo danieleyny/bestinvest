@@ -1,2 +1,2 @@
-# Best Invest
-A landing page for a stock market brokerage.
+# bestinvest
+A landing page for an investment brokerage.
