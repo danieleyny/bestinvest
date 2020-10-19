@@ -160,7 +160,7 @@ p{
 }
 
 #services .service-top{
-    width: 500px;
+    width: 88%;
     max-width: 0 auto;
 }
 
@@ -326,7 +326,7 @@ p{
 }
 
 #about .col-right{
-    width: 100%;
+    width: 75%;
 
 }
 #about .col-right h2{
