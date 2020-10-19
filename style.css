@@ -65,6 +65,16 @@ p{
     color: white;
     background-color: rgb(102, 172, 159);
 }
+
+.brand h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.brand h1 span{
+    font-size: 3rem;
+    color: crimson;
+}
 /* Hero Section */
 #hero {
     background-image: url(./images/nycskyline.png);
@@ -338,8 +348,8 @@ p{
 }
 #about .col-right .cta:hover{
     color: white;
-    border-color: crimson;
-    background-color: crimson;
+    border-color: rgb(141, 228, 212);
+    background-color: rgb(141, 228, 212);
     
 }
 #about .col-left .about-img  {
@@ -411,6 +421,46 @@ p{
 }
 /* End Contact Section */
 
+/*  Footer Section */
+#footer{ 
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+}
+
+#footer p{
+    color: white;
+    font-size: 1.3rem;
+
+}
+/*  End Footer Section */
+
+
 
 /* Keyframes */
 @keyframes text_reveal_box {
@@ -438,3 +488,92 @@ p{
 
 
 /* End Keyframes */
+
+/* Media Query For Tablet*/
+@media only screen and (min-width:768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 50px;
+    }
+    h1 .section-title{
+        font-size: 7rem;
+    }
+
+    /* Hero */
+    #hero h1{
+        font-size: 7rem;
+    }
+    /* End Hero */
+
+    /* Service Section */
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 1.5%;
+    }
+    /* End Service Section */
+
+    /* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+    /* End Project */
+    
+
+    /* About */
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width:600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+
+    /* End About */
+
+    /* Contact */
+    #contact .contact{
+        flex-direction:column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-height: 20vh;
+    }
+    #contact .contact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    /* End Contact */
+}
+
+/* End Media Query For Tablet*/
