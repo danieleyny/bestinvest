@@ -43,7 +43,6 @@ p{
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
-    margin-top: 180px;
 
 }
 .section-title span {
@@ -76,8 +75,13 @@ p{
     margin-top: 30px;
     transition: .3s ease;
     transition-property: background-color, color;
-    margin-left: 50%;
+
 }
+
+.herotitlebutton {
+    margin-left: 20%;
+}
+
 .cta:hover{
     color: white;
     background-color: rgb(102, 172, 159);
@@ -167,7 +171,7 @@ p{
     width: 500px;
     padding: 40px;
     position: relative;
-    margin-top: 340px;
+    margin-top: 380px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -214,6 +218,39 @@ p{
 .box input[type = "text"]:focus, .box input[type = "email"]:focus, .box input[type = "number"]:focus, .box textarea:focus{
     width: 280px;
     border-color: lawngreen;
+}
+
+.box button[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 160px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 17px;
+}
+
+.box button[type = "submit"]:hover {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 20px;
+    border-color: greenyellow;
 }
 
 /* End Form Section */
